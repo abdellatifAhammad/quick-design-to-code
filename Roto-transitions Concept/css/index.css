@@ -18,7 +18,7 @@ Description:
 :root {
   --primary-bg-color: #F25050;
   --primary-text-color: #050511;
-  --body-bg-color: #FEF2F2;
+  --body-bg-color: #FFFFFF;
   --bg-warning: #FEB12E;
   --bg-success: #20BF43;
   --bg-danger: #F25050;
@@ -197,8 +197,6 @@ body.dark a {
 .dark p {
   color: #b3b3b3;
 }
-
-
 /*=================================================================*/
 /*                     BUTTONS
 /*=================================================================*/

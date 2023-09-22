@@ -1,0 +1,157 @@
+@import "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
+:root {
+  --primary-bg-color: #f25050;
+  --primary-text-color: #050511;
+  --body-bg-color: #fff;
+  --bg-warning: #feb12e;
+  --bg-success: #20bf43;
+  --bg-danger: #f25050;
+  --button-bg-color: #f25050;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  margin: 0 !important;
+  overflow: auto !important;
+}
+
+body {
+  background-color: var(--body-bg-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0 5%;
+  font-family: Poppins, sans-serif;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.row {
+  flex-direction: row;
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-text-color);
+  margin: 20px 0;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+a {
+  color: var(--primary-text-color);
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+blockquote {
+  background: #f7f7f7;
+  border-radius: 10px;
+  margin: 0 0 20px;
+  padding: 20px;
+  font-size: 16px;
+}
+
+blockquote p {
+  line-height: 1.6;
+}
+
+p {
+  color: #3e3e46;
+  font-family: Poppins;
+  font-size: 1.1em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+footer {
+  text-align: center;
+  margin: 50px 0 10px;
+}
+
+body.dark {
+  color: #fff;
+  background-color: #12121f;
+}
+
+body.dark .section-title {
+  color: #fff;
+}
+
+body.dark .bg-dark {
+  background: #302f4e !important;
+}
+
+.dark .mouse {
+  border-color: #fff;
+}
+
+.dark .mouse-dot {
+  background-color: #fff;
+}
+
+body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark h5, body.dark h6, body.dark a {
+  color: #fff;
+}
+
+.dark p {
+  color: #b3b3b3;
+}
+
+.btn {
+  background-color: var(--button-bg-color);
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-style: none;
+  border-radius: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 40px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=index.e9a92ad8.css.map */
