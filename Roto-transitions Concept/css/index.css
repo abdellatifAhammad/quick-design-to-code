@@ -44,7 +44,6 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin: 0px 5%;
 }
 
 img {
@@ -215,6 +214,96 @@ body.dark a {
 }
 
 /*=================================================================*/
+/*                      ANIMATIONS                            
+/*=================================================================*/
+
+
+
+.disappear-out{
+  scale: 1;
+  opacity: 0;
+  animation: disappear-out 1.5s ease-in-out;
+}
+
+#slice-1 .zoomed-in {
+  animation: 1.5s ease-in-out zoom-effect ;
+}
+
+#slice-1 .disappear-out {
+  animation: 900ms ease-in-out 0ms 1 normal none running disappear-out; 
+}
+
+#slice-2 .zoomed-in {
+  animation: 1400ms ease-in-out 0ms 1 normal none running zoom-effect;
+}
+
+#slice-2 .disappear-out {
+  animation: 900ms ease-in-out 0ms 1 normal none running disappear-out;
+}
+
+#slice-3 .zoomed-in {
+  animation: 1.25s ease-in-out 0ms 1 normal none running zoom-effect;
+}
+
+#slice-3 .disappear-out {
+  animation: 900ms ease-in-out 0ms 1 normal none running disappear-out;
+}
+
+
+#slice-1  {
+  animation: 1.5s ease-in-out paused rotation-effect;
+}
+
+#slice-2 {
+  animation: 1507.19ms ease-in-out 0ms 1 normal none paused rotation-effect;
+}
+
+#slice-3 {
+  animation: rotation-effect 1.3s ease-in-out;
+  animation-play-state: paused;
+}
+
+
+
+@keyframes rotation-effect {
+  from{
+     /* rotate: 0deg; */
+     transform: rotate(0deg);
+  }
+  to{
+   /* rotate: 360deg; */
+   transform: rotate(360deg);
+  }
+ }
+
+@keyframes zoom-effect {
+ 0%{
+    scale: 5;
+    /* rotate: 0deg; */
+ }
+ 100%{
+  scale: 1;
+  /* rotate: 360deg; */
+ }
+}
+
+@keyframes disappear-out {
+  0%{
+     /* rotate: 0deg; */
+     opacity: 1;
+     /* scale: 4; */
+  }
+  100%{
+    /* scale: 4; */
+   /* rotate: 360deg; */
+   opacity: 0;
+  }
+ }
+ 
+
+
+
+/*=================================================================*/
 /*                      RESPONSIVE SETTINGS
 /*=================================================================*/
 /* // X-Small devices (portrait phones, less than 576px) */
@@ -240,3 +329,5 @@ body.dark a {
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
 @media (max-width: 1400px) {}
+
+

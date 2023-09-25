@@ -24,7 +24,6 @@ body {
   background-color: var(--body-bg-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin: 0 5%;
   font-family: Poppins, sans-serif;
   overflow-x: hidden;
 }
@@ -152,6 +151,78 @@ body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark h5, body.dark 
   padding: 10px 40px;
   font-size: 15px;
   font-weight: 400;
+}
+
+.disappear-out {
+  opacity: 0;
+  animation: 1.5s ease-in-out disappear-out;
+  scale: 1;
+}
+
+#slice-1 .zoomed-in {
+  animation: 1.5s ease-in-out zoom-effect;
+}
+
+#slice-1 .disappear-out {
+  animation: .9s ease-in-out disappear-out;
+}
+
+#slice-2 .zoomed-in {
+  animation: 1.4s ease-in-out zoom-effect;
+}
+
+#slice-2 .disappear-out {
+  animation: .9s ease-in-out disappear-out;
+}
+
+#slice-3 .zoomed-in {
+  animation: 1.25s ease-in-out zoom-effect;
+}
+
+#slice-3 .disappear-out {
+  animation: .9s ease-in-out disappear-out;
+}
+
+#slice-1 {
+  animation: 1.5s ease-in-out paused rotation-effect;
+}
+
+#slice-2 {
+  animation: 1.50719s ease-in-out paused rotation-effect;
+}
+
+#slice-3 {
+  animation: 1.3s ease-in-out paused rotation-effect;
+}
+
+@keyframes rotation-effect {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes zoom-effect {
+  0% {
+    scale: 5;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes disappear-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 /*# sourceMappingURL=index.e9a92ad8.css.map */
