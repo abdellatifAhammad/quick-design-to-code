@@ -8,6 +8,7 @@
 
 var currentImage = 1;
 var totalImages = 4;
+var btnClicks = 0;
 
 
 function clear_previous() {
@@ -20,7 +21,7 @@ function clear_previous() {
 }
 
 
-function switch_images(btn) {
+function switch_images() {
     btn = document.getElementsByClassName("switch-btn")[0];
     btn.classList.add("switch-btn-circle");
     setTimeout(() => {
@@ -52,5 +53,26 @@ function switch_images(btn) {
         }
         btn.classList.remove("switch-btn-circle");
     }, 500);
-    
+
+    setTimeout(() => {
+        let first_spans = document.querySelectorAll("div.text-spin-animation-wrapper > span");
+        let last_spans = document.querySelectorAll("div.text-cube-spin-animation-wrapper > span");
+        if (btnClicks < totalImages - 2) {
+            first_spans.forEach((span, index) => {
+                span.style.transform = `translateY(-${(1.75 * (btnClicks + 1))}em)`;
+            });
+            last_spans.forEach((span, index) => {
+                span.style.transform = `translateY(${(1.5 * (btnClicks + 1))}em)`;
+            });
+            btnClicks++;
+        } else {
+            btnClicks = 0;
+            first_spans.forEach((span, index) => {
+                span.style.transform = `translateY(-${(1.75 * (btnClicks))}em)`;
+            });
+            last_spans.forEach((span, index) => {
+                span.style.transform = `translateY(${(1.5 * (btnClicks))}em)`;
+            });
+        }
+    }, 500);
 }

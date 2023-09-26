@@ -215,37 +215,44 @@ img {
 
 .text-spin-animation-wrapper {
   box-sizing: content-box;
+  text-align: center;
   flex-direction: column;
-  height: 8em;
+  height: 6.5em;
   display: flex;
   overflow: hidden;
 }
 
-.text-spin-animation-wrapper span {
-  height: 100%;
-  animation: 7s infinite spin_words;
+.text-cube-spin-animation-wrapper {
+  box-sizing: content-box;
+  text-align: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 1.5em;
+  margin-top: 1.5em;
+  display: flex;
+  overflow: hidden;
 }
 
-@keyframes spin_words {
-  10% {
-    transform: translateY(8em);
-  }
+.text-cube-spin-animation-wrapper span {
+  color: #fff;
+  letter-spacing: .5em;
+  text-transform: uppercase;
+  height: 1.5em;
+  transition: all 1s;
+}
 
-  25% {
-    transform: translateY(-16em);
-  }
-
-  35% {
-    transform: translateY(-24em);
-  }
-
-  50% {
-    transform: translateY(-36em);
-  }
-
-  70% {
-    transform: translateY(-8em);
-  }
+.text-spin-animation-wrapper span {
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1.4em;
+  text-indent: -1.4em;
+  direction: rtl;
+  text-align: center;
+  height: 6.5em;
+  font-family: amiri;
+  font-size: 3.4em;
+  font-weight: 200;
+  transition: all 1s;
 }
 
 @keyframes zoom-effect {
