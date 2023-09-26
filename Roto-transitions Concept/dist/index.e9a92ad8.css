@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Amiri&family=Roboto:wght@300;400;500;700&display=swap";
 :root {
   --primary-bg-color: #f25050;
   --primary-text-color: #050511;
@@ -211,6 +211,41 @@ img {
 #slice-3 .disappear-out {
   opacity: 0;
   animation: .7s ease-in-out disappear-out;
+}
+
+.text-spin-animation-wrapper {
+  box-sizing: content-box;
+  flex-direction: column;
+  height: 8em;
+  display: flex;
+  overflow: hidden;
+}
+
+.text-spin-animation-wrapper span {
+  height: 100%;
+  animation: 7s infinite spin_words;
+}
+
+@keyframes spin_words {
+  10% {
+    transform: translateY(8em);
+  }
+
+  25% {
+    transform: translateY(-16em);
+  }
+
+  35% {
+    transform: translateY(-24em);
+  }
+
+  50% {
+    transform: translateY(-36em);
+  }
+
+  70% {
+    transform: translateY(-8em);
+  }
 }
 
 @keyframes zoom-effect {
