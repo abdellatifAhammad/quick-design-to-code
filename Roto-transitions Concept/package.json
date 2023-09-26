@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev":"parcel serve index.html",
+    "dev":"parcel serve index.html test.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
