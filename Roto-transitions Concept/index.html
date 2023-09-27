@@ -5,115 +5,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Transforming design concepts into code. Roto-transitions Concept.">
     <title>Quick Desing to Code | Roto-transitions Concept.</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
 
-    <!-- begin of header -->
-    <!-- <header style="position: fixed;display: flex;justify-content: space-evenly;top: 0px;width: 100%;z-index: 100;padding: 20px;">
-                <ion-icon style="width:10%;" name="menu-outline"></ion-icon>
-                <a href="#" style="width:50%;text-align: center;">Globetrotter</a>
-                <div style="width:40%;">
-                    <form action="search">
-                        <input type="text" name="search" id="search">
-                    </form>
-                    <ion-icon name="search-outline"></ion-icon>
-                </div>
-            </header> -->
-    <!-- end of header -->
-
-    <!-- begin of main -->
-
-    <section style="width:100%;overflow: hidden;height: 100vh;position: relative;">
-        <div style="width:100%;height:100vh;position:absolute;overflow:hidden">
-            <div id="slice-1" style="width:120%;height: 120%;position: absolute;top:-10%;left:-10%;z-index: 0;">
-                <img id="s1-img1" src="./assets/img/1.png"
-                    style="z-index:4;width:120%;height: 120%;position: absolute;">
-                <img id="s1-img2" src="./assets/img/2.png" style="z-index:3;position: absolute;width:120%;height:120%;">
-                <img id="s1-img3" src="./assets/img/3.jpg" style="z-index:2;position: absolute;width:120%;height:120%;">
-                <img id="s1-img4" src="./assets/img/1.png" style="z-index:1;position: absolute;width:120%;height:120%;">
+    <section class="section-container">
+        <div class="div-container">
+            <div id="slice-1" class="img-container slice-1">
+                <img id="s1-img1" src="./assets/img/1.webp" class="img-container" alt="slide-picture">
+                <img id="s1-img2" src="./assets/img/2.webp" class="img-container" alt="slide-picture">
+                <img id="s1-img3" src="./assets/img/3.webp" class="img-container" alt="slide-picture">
+                <img id="s1-img4" src="./assets/img/4.webp" class="img-container" alt="slide-picture">
+                <img id="s1-img5" src="./assets/img/1.webp" class="img-container" alt="slide-picture">
             </div>
         </div>
-        <div style="width:100%;height:100vh;position:absolute;overflow:hidden;">
-            <div id="slice-2"
-                style="width:120%;height: 120%;position: absolute;top:-10%;left:-10%;z-index: 2;clip-path: circle(70vh at center);">
-                <div
-                    style="width: 120%;height: 120%;background: rgba(36, 36, 36, 0.31);position: absolute;z-index: 10;">
-                </div>
-                <img id="s2-img1" src="./assets/img/1.png"
-                    style="z-index:4;width:120%;height: 120%;position: absolute;">
-                <img id="s2-img2" src="./assets/img/2.png" style="z-index:3;position: absolute;width:120%;height:120%;">
-                <img id="s2-img3" src="./assets/img/3.jpg" style="z-index:2;position: absolute;width:120%;height:120%;">
-                <img id="s2-img4" src="./assets/img/1.png" style="z-index:1;position: absolute;width:120%;height:120%;">
+        <div class="div-container">
+            <div id="slice-2" class="img-container slice-2">
+                <div class="slice-2-overlay"></div>
+                <img id="s2-img1" src="./assets/img/1.webp" class="img-container" alt="slide-picture">
+                <img id="s2-img2" src="./assets/img/2.webp" class="img-container" alt="slide-picture">
+                <img id="s2-img3" src="./assets/img/3.webp" class="img-container" alt="slide-picture">
+                <img id="s2-img4" src="./assets/img/4.webp" class="img-container" alt="slide-picture">
+                <img id="s2-img5" src="./assets/img/1.webp" class="img-container" alt="slide-picture">
             </div>
         </div>
-        <div style="width:100%;height:100vh;position:absolute;overflow:hidden">
-            <div id="slice-3"
-                style="width:120%;height: 120%;position: absolute;top:-10%;left:-10%;z-index: 4;clip-path: circle(38vh at center);">
-                <img id="s3-img1" src="./assets/img/1.png" style="z-index:4;position: absolute;width:100%;height:120%;">
-                <img id="s3-img2" src="./assets/img/2.png" style="z-index:3;position: absolute;width:100%;height:120%;">
-                <img id="s3-img3" src="./assets/img/3.jpg" style="z-index:2;position: absolute;width:120%;height:120%;">
-                <img id="s3-img4" src="./assets/img/1.png" style="z-index:1;position: absolute;width:120%;height:120%;">
+        <div class="div-container">
+            <div id="slice-3" class="img-container slice-3">
+                <img id="s3-img1" src="./assets/img/1.webp" class="img-container" alt="slide-picture">
+                <img id="s3-img2" src="./assets/img/2.webp" class="img-container" alt="slide-picture">
+                <img id="s3-img3" src="./assets/img/3.webp" class="img-container" alt="slide-picture">
+                <img id="s3-img4" src="./assets/img/4.webp" class="img-container" alt="slide-picture">
+                <img id="s3-img5" src="./assets/img/1.webp" class="img-container" alt="slide-picture">
             </div>
-        </div>
-        <!--  -->
-        <div
-            style="width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.212);position: absolute;z-index: 10;display: flex;flex-direction: column;align-items: center;justify-content: center;">
-            <div class="text-spin-animation-wrapper">
-                <span>
-                    highlands
-                </span>
-                <span>
-                    sahara
-                </span>
-                <span>
-                    dolomites
-                </span>
-                <!-- <span>
-                    maldives
-                </span> -->
-            </div>
-
-            <hr width="25%" style="background-color: white;border-style: none;height: 1px;">
-
-            <div class="text-cube-spin-animation-wrapper">
-                <span>
-                    scotland
-                </span>
-                <span>
-                    marakaech
-                </span>
-                <span>
-                    Casablanca
-                </span>
-            </div>
-
-            <div
-                style="display: flex;align-items: center;justify-content: space-evenly;min-width: 200px;margin-top: 1.5em;">
-                <svg style="cursor: pointer;" width="35" height="9" viewBox="0 0 35 9" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.9369 2.42432L8.27765 5.08356H35V8.51258H0L8.51258 0L10.9369 2.42432Z" fill="white" />
-                </svg>
-                <div style="width: 1px;height: 50px;background-color: white;"></div>
-                <svg style="cursor: pointer;transform: rotateY(180deg);" width="35" height="9" viewBox="0 0 35 9"
-                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.9369 2.42432L8.27765 5.08356H35V8.51258H0L8.51258 0L10.9369 2.42432Z" fill="white" />
-                </svg>
-            </div>
-
         </div>
     </section>
 
-    <div class="switch-btn" onclick="switch_images()">
-        <ion-icon name="sync-outline" style="font-size: 22px;"></ion-icon>
-    </div>
-    <!-- end of main -->
+    <section class="overlay-container">
+        <div class="header">
+            <div class="menu-icon">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+            <p class="header-text">globerotter</p>
+            <form class="search-form" action="">
+                <div class="search-wrapper">
+                    <input type="text" name="search" id="search" placeholder="Search for anything">
+                    <ion-icon class="search-icon" name="search-outline"></ion-icon>
+                </div>
+            </form>
+        </div>
 
-    <!-- begin of footer -->
-    <!-- end of footer -->
-    <script src="./js/index.js"></script>
+        <div class="text-spin-animation-wrapper">
+            <span>Nature</span>
+            <span>Desert</span>
+            <span>Beach</span>
+            <span>Mountains</span>
+        </div>
+
+        <hr class="horizontal-line">
+
+        <div class="text-cube-spin-animation-wrapper">
+            <span>Tanger</span>
+            <span>Laayoune</span>
+            <span>Casablanca</span>
+            <span>Atlas</span>
+        </div>
+
+        <div class="navigation-icons">
+            <svg class="nav-icon " width="35" height="9" viewBox="0 0 35 9" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.9369 2.42432L8.27765 5.08356H35V8.51258H0L8.51258 0L10.9369 2.42432Z" fill="white" />
+            </svg>
+            <div class="divider"></div>
+            <svg class="nav-icon nav-icon-right" width="35" height="9" viewBox="0 0 35 9" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.9369 2.42432L8.27765 5.08356H35V8.51258H0L8.51258 0L10.9369 2.42432Z" fill="white" />
+            </svg>
+        </div>
+
+        <div class="share-content">
+            <p class="share-text">share</p>
+            <hr class="share-divider">
+            <ion-icon class="share-icon" name="share-social-outline"></ion-icon>
+        </div>
+
+        <div class="discover-more">
+            <p class="discover-text">Discover More</p>
+        </div>
+
+        <div class="switch-btn" onclick="switch_images()">
+            <ion-icon name="sync-outline" class="switch-icon"></ion-icon>
+        </div>
+    </section>
+
+    <script src="js/index.js"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </body>
 

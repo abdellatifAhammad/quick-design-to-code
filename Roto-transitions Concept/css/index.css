@@ -3,11 +3,11 @@
 Project Name: Roto-transitions Concept
 Version: 1.0
 Author: Abdellatif Ahammad 
-Author URI:
-Description:
+Author Github: https://github.com/abdellatifAhammad
+Description: Roto-transitions Concept
 */
-/*  Google fonts  : Amiri   */
-@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Roboto:wght@300;400;500;700&display=swap');
+/*  Google fonts  : Amiri,poppins   */
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Poppins:wght@300;400;500;700&display=swap');
 
 
 /*=================================================================*/
@@ -23,8 +23,6 @@ Description:
   --bg-danger: #F25050;
   --button-bg-color: #F25050;
 }
-
-
 
 * {
   margin: 0;
@@ -47,6 +45,7 @@ body {
 
 img {
   max-width: 100%;
+  scale: 1.1;
 }
 
 .relative {
@@ -66,7 +65,6 @@ img {
   justify-content: center;
   align-items: center;
 }
-
 
 li {
   list-style: none;
@@ -133,14 +131,261 @@ p {
 
 
 /*=================================================================*/
-/*                      PRELOADER                              
+/*                      INPUTS                              
 /*=================================================================*/
 
 
+input {
+  text-transform: uppercase;
+  color: white;
+  border-style: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  height: 30px;
+  margin-right: 25px;
+}
+
+input::placeholder {
+  color: white;
+}
+
 
 /*=================================================================*/
-/*                      HEADER                              
+/*                      CUSTOM                              
 /*=================================================================*/
+
+
+/* Section Styles */
+.section-container {
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+}
+
+/* Div Styles */
+.div-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+/* Common Image Styles */
+.img-container {
+  width: 120%;
+  height: 120%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+}
+
+[id$="-img1"] {
+  z-index: 5;
+}
+
+[id$="-img2"] {
+  z-index: 4;
+}
+
+
+[id$="-img3"] {
+  z-index: 3;
+}
+
+[id$="-img4"] {
+  z-index: 2;
+}
+
+[id$="-img5"] {
+  z-index: 1;
+}
+
+
+
+/* Slice-1 Styles */
+.slice-1 {
+  top: -10%;
+  left: -10%;
+  z-index: 0;
+}
+
+/* Slice-2 Styles */
+.slice-2 {
+  top: -10%;
+  left: -10%;
+  z-index: 2;
+  clip-path: circle(70vh at center);
+}
+
+.slice-2-overlay {
+  width: 120%;
+  height: 120%;
+  background: rgba(36, 36, 36, 0.31);
+  position: absolute;
+  z-index: 10;
+}
+
+/* Slice-3 Styles */
+.slice-3 {
+  top: -10%;
+  left: -10%;
+  z-index: 4;
+  clip-path: circle(38vh at center);
+}
+
+
+.overlay-container {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.212);
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  color: white;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu-icon {
+  width: 33%;
+}
+
+.menu-icon ion-icon {
+  margin-left: 15%;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.header-text {
+  color: white;
+  min-width: 33%;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
+.search-form {
+  position: relative;
+  width: 33%;
+  height: 30px;
+  justify-content: end;
+}
+
+.search-wrapper {
+  position: absolute;
+  top: 0;
+  right: 15%;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  font-size: 22px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.horizontal-line {
+  width: 25%;
+  background-color: white;
+  border-style: none;
+  height: 1px;
+}
+
+.navigation-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  min-width: 200px;
+  margin-top: 1.5em;
+}
+
+.nav-icon {
+  cursor: pointer;
+}
+
+.nav-icon-right {
+  transform: rotateY(-180deg);
+}
+
+.divider {
+  width: 1px;
+  height: 50px;
+  background-color: white;
+}
+
+
+.share-content {
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  transform: rotate(90deg);
+}
+
+.share-text {
+  color: white;
+  text-transform: uppercase;
+}
+
+.share-divider {
+  border: none;
+  background: white;
+  width: 50px;
+  height: 1px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.share-icon {
+  color: white;
+  font-size: 30px;
+  rotate: -90deg;
+}
+
+.discover-more {
+  position: absolute;
+  bottom: 20px;
+}
+
+.discover-text {
+  color: white;
+  position: relative;
+  cursor: pointer;
+}
+
+.discover-text::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+
+
+.switch-icon {
+  font-size: 22px;
+  transform: rotate(90deg);
+}
 
 
 /*=================================================================*/
@@ -153,65 +398,8 @@ footer {
 }
 
 /*=================================================================*/
-/*                      DARK MODE                              
-/*=================================================================*/
-body.dark {
-  color: #FFF;
-  background-color: #12121f;
-}
-
-body.dark .section-title {
-  color: #FFF;
-}
-
-
-body.dark .bg-dark {
-  background: #302f4e !important;
-}
-
-.dark .mouse {
-  border-color: white;
-}
-
-.dark .mouse-dot {
-  background-color: white;
-}
-
-body.dark h1,
-body.dark h2,
-body.dark h3,
-body.dark h4,
-body.dark h5,
-body.dark h6 {
-  color: #FFF;
-}
-
-
-body.dark a {
-  color: white;
-}
-
-
-.dark p {
-  color: #b3b3b3;
-}
-
-/*=================================================================*/
 /*                     BUTTONS
 /*=================================================================*/
-
-.btn {
-  border-style: none;
-  background-color: var(--button-bg-color);
-  color: white;
-  padding: 10px 40px;
-  font-size: 15px;
-  font-weight: 400;
-  border-radius: 5px;
-  cursor: pointer;
-  text-transform: uppercase;
-  width: fit-content;
-}
 
 
 .switch-btn {
@@ -225,7 +413,19 @@ body.dark a {
   position: fixed;
   z-index: 15;
   bottom: 20px;
-  right: 20px;
+  right: 5%;
+  transition: 500ms all;
+}
+
+
+@keyframes ro {
+  from {
+    rotate: 0deg;
+  }
+
+  to {
+    rotate: 360deg;
+  }
 }
 
 
@@ -247,11 +447,6 @@ body.dark a {
 /*=================================================================*/
 /*                      ANIMATIONS                            
 /*=================================================================*/
-
-
-img {
-  scale: 1.1;
-}
 
 
 #slice-1 .zoomed-in {
@@ -295,8 +490,8 @@ img {
 .text-cube-spin-animation-wrapper {
   box-sizing: content-box;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
   height: 1.5em;
   overflow: hidden;
   margin-top: 1.5em;
@@ -357,7 +552,7 @@ img {
 @keyframes growing-circle {
   to {
     scale: 1;
-    opacity: 0.8;
+    opacity: 0.6;
     background: transparent;
   }
 }
@@ -375,8 +570,31 @@ img {
 @media (max-width: 576px) {}
 
 /* // Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  .menu-icon {
+    display: none;
+  }
 
+  .search-form {
+    display: none;
+  }
+
+  .text-spin-animation-wrapper {
+    height: 3.5em;
+  }
+
+  .text-spin-animation-wrapper span {
+    letter-spacing: 0.7em;
+    text-indent: -0.7em;
+    height: 1.5em;
+    font-size: 2em;
+  }
+
+  .share-content {
+    left: -40px;
+  }
+
+}
 /* // Large devices (desktops, 992px and up) */
 @media (max-width: 992px) {}
 

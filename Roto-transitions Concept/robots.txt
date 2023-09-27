@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /private/          # Exclude private content
+Disallow: /admin/            # Exclude administrative sections
+Disallow: /images/           # Exclude images directory
+Disallow: /css/              # Exclude CSS directory
+Disallow: /js/               # Exclude JavaScript directory
+Disallow: /downloads/        # Exclude downloads directory
+Disallow: /temp/             # Exclude temporary files
+Disallow: /cgi-bin/          # Exclude CGI scripts
+Disallow: /search/           # Exclude search results
+Disallow: /404.html          # Exclude custom 404 page
+
+Allow: /                     # Allow all other pages to be crawled

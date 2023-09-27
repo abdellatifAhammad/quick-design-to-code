@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css2?family=Amiri&family=Roboto:wght@300;400;500;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Amiri&family=Poppins:wght@300;400;500;700&display=swap";
 :root {
   --primary-bg-color: #f25050;
   --primary-text-color: #050511;
@@ -30,6 +30,7 @@ body {
 
 img {
   max-width: 100%;
+  scale: 1.1;
 }
 
 .relative {
@@ -105,52 +106,243 @@ p {
   line-height: 30px;
 }
 
+input {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #0000;
+  border-style: none none solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #fff;
+  outline: none;
+  height: 30px;
+  margin-right: 25px;
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+.section-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.div-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.img-container {
+  object-fit: cover;
+  object-position: center;
+  width: 120%;
+  height: 120%;
+  position: absolute;
+}
+
+[id$="-img1"] {
+  z-index: 5;
+}
+
+[id$="-img2"] {
+  z-index: 4;
+}
+
+[id$="-img3"] {
+  z-index: 3;
+}
+
+[id$="-img4"] {
+  z-index: 2;
+}
+
+[id$="-img5"] {
+  z-index: 1;
+}
+
+.slice-1 {
+  z-index: 0;
+  top: -10%;
+  left: -10%;
+}
+
+.slice-2 {
+  z-index: 2;
+  clip-path: circle(70vh);
+  top: -10%;
+  left: -10%;
+}
+
+.slice-2-overlay {
+  z-index: 10;
+  background: #2424244f;
+  width: 120%;
+  height: 120%;
+  position: absolute;
+}
+
+.slice-3 {
+  z-index: 4;
+  clip-path: circle(38vh);
+  top: -10%;
+  left: -10%;
+}
+
+.overlay-container {
+  z-index: 10;
+  background-color: #00000036;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
+
+.header {
+  color: #fff;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  position: absolute;
+  top: 0;
+}
+
+.menu-icon {
+  width: 33%;
+}
+
+.menu-icon ion-icon {
+  cursor: pointer;
+  margin-left: 15%;
+  font-size: 28px;
+}
+
+.header-text {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  text-align: center;
+  min-width: 33%;
+}
+
+.search-form {
+  justify-content: end;
+  width: 33%;
+  height: 30px;
+  position: relative;
+}
+
+.search-wrapper {
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 15%;
+}
+
+.search-icon {
+  text-align: center;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.horizontal-line {
+  background-color: #fff;
+  border-style: none;
+  width: 25%;
+  height: 1px;
+}
+
+.navigation-icons {
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 200px;
+  margin-top: 1.5em;
+  display: flex;
+}
+
+.nav-icon {
+  cursor: pointer;
+}
+
+.nav-icon-right {
+  transform: rotateY(-180deg);
+}
+
+.divider {
+  background-color: #fff;
+  width: 1px;
+  height: 50px;
+}
+
+.share-content {
+  align-items: center;
+  display: flex;
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  transform: rotate(90deg);
+}
+
+.share-text {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.share-divider {
+  background: #fff;
+  border: none;
+  width: 50px;
+  height: 1px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.share-icon {
+  color: #fff;
+  font-size: 30px;
+  rotate: -90deg;
+}
+
+.discover-more {
+  position: absolute;
+  bottom: 20px;
+}
+
+.discover-text {
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+}
+
+.discover-text:after {
+  content: "";
+  background-color: #fff;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.switch-icon {
+  font-size: 22px;
+  transform: rotate(90deg);
+}
+
 footer {
   text-align: center;
   margin: 50px 0 10px;
-}
-
-body.dark {
-  color: #fff;
-  background-color: #12121f;
-}
-
-body.dark .section-title {
-  color: #fff;
-}
-
-body.dark .bg-dark {
-  background: #302f4e !important;
-}
-
-.dark .mouse {
-  border-color: #fff;
-}
-
-.dark .mouse-dot {
-  background-color: #fff;
-}
-
-body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark h5, body.dark h6, body.dark a {
-  color: #fff;
-}
-
-.dark p {
-  color: #b3b3b3;
-}
-
-.btn {
-  background-color: var(--button-bg-color);
-  color: #fff;
-  cursor: pointer;
-  text-transform: uppercase;
-  border-style: none;
-  border-radius: 5px;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 10px 40px;
-  font-size: 15px;
-  font-weight: 400;
 }
 
 .switch-btn {
@@ -161,10 +353,21 @@ body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark h5, body.dark 
   place-items: center;
   width: 50px;
   height: 50px;
+  transition: all .5s;
   display: grid;
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 5%;
+}
+
+@keyframes ro {
+  from {
+    rotate: none;
+  }
+
+  to {
+    rotate: 360deg;
+  }
 }
 
 .switch-btn-circle:before {
@@ -180,10 +383,6 @@ body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark h5, body.dark 
   animation: .5s ease-in-out alternate growing-circle;
   position: absolute;
   scale: 0;
-}
-
-img {
-  scale: 1.1;
 }
 
 #slice-1 .zoomed-in {
@@ -225,8 +424,8 @@ img {
 .text-cube-spin-animation-wrapper {
   box-sizing: content-box;
   text-align: center;
-  flex-direction: column;
-  justify-content: flex-end;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
   height: 1.5em;
   margin-top: 1.5em;
   display: flex;
@@ -283,9 +482,30 @@ img {
 
 @keyframes growing-circle {
   to {
-    opacity: .8;
+    opacity: .6;
     background: none;
     scale: 1;
+  }
+}
+
+@media (width <= 768px) {
+  .menu-icon, .search-form {
+    display: none;
+  }
+
+  .text-spin-animation-wrapper {
+    height: 3.5em;
+  }
+
+  .text-spin-animation-wrapper span {
+    letter-spacing: .7em;
+    text-indent: -.7em;
+    height: 1.5em;
+    font-size: 2em;
+  }
+
+  .share-content {
+    left: -40px;
   }
 }
 
