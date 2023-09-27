@@ -14,6 +14,7 @@ This project is named 'Quick Design to Code' series, where I transform popular d
 - Roto-transitions Concept
 
 >![Project Demo](./Roto-transitions%20Concept//demo.gif)
+> <br>
 > You can see the demo from here [demo link](https://abdellatifahammad.github.io/quick-design-to-code/Roto-transitions%20Concept/).
 
 
